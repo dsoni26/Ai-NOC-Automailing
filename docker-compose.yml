@@ -1,0 +1,11 @@
+version: '3.9'
+services:
+  app:
+    build: .
+    ports:
+      - "8503:8503"
+    env_file:
+      - .env
+    volumes:
+      - .:/app
+    restart: unless-stopped

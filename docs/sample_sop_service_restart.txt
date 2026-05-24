@@ -1,0 +1,10 @@
+Service restart and recovery SOP:
+
+1. Confirm the impacted service process status and any system resource alerts.
+2. Review recent configuration changes before restarting.
+3. Restart the service gracefully using the standard service manager.
+4. Verify service health after restart and confirm recovery of dependent functionality.
+5. Monitor logs for any repeated failure patterns.
+6. Update the incident ticket with the recovery steps and next update timeline.
+
+Always coordinate with upstream application owners for restart approvals if required.

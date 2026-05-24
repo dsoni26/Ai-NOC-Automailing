@@ -1,0 +1,10 @@
+Network outage response procedure:
+
+1. Confirm the scope of the outage using monitoring dashboards.
+2. Verify if the issue is isolated to a single server or affecting multiple services.
+3. Check network device status, interface health, and link status.
+4. Restart affected network interfaces if safe to do so.
+5. Validate DNS resolution and connectivity to upstream providers.
+6. Escalate to network engineering if the outage persists after initial reconnection steps.
+
+Remember to document any route changes or firewall updates in the incident ticket.

@@ -1,0 +1,10 @@
+Database incident response SOP:
+
+1. Identify whether the database is accepting connections.
+2. Review database logs for SQL errors, deadlocks, or replication lag.
+3. Check disk space, CPU, and memory on database hosts.
+4. Confirm backup and restore status before making any changes.
+5. Restart the database service if the issue is isolated and safe.
+6. Apply failover procedures for secondary nodes if primary remains unavailable.
+
+Document the root cause and verify data integrity after service recovery.

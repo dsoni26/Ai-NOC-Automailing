@@ -1,0 +1,32 @@
+[
+  {
+    "incident_id": "INC-2026-001",
+    "title": "Payment Gateway Latency Spike",
+    "date": "2026-05-12",
+    "severity": "High",
+    "status": "Mitigated",
+    "description": "High latency was detected in the payment gateway after a spike in transaction volume. Customers reported slow checkout completion.",
+    "actions_taken": "Scaled the payment API cluster, cleared queue backlog, and restarted the gateway service.",
+    "root_cause": "Insufficient service capacity and retry storm due to transient upstream timeouts."
+  },
+  {
+    "incident_id": "INC-2026-002",
+    "title": "POS Service Crash on Store Terminal",
+    "date": "2026-05-18",
+    "severity": "Critical",
+    "status": "Investigating",
+    "description": "A point-of-sale service crashed on a store terminal after repeated session timeouts, impacting transaction processing.",
+    "actions_taken": "Restarted the POS service, collected service logs, and validated session store connectivity.",
+    "root_cause": "Session store connectivity interruption caused by network glitch."
+  },
+  {
+    "incident_id": "INC-2026-003",
+    "title": "Database Replication Lag",
+    "date": "2026-05-20",
+    "severity": "Medium",
+    "status": "Monitoring",
+    "description": "Database replication lag increased beyond thresholds, affecting read replica freshness.",
+    "actions_taken": "Validated replication topology, cleared IO queue, and increased replica resources.",
+    "root_cause": "Sustained high write pressure on primary database node."
+  }
+]
